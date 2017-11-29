@@ -1,0 +1,125 @@
+/* 
+ * File:   main.cpp
+ * Author: Dr. Mark E. Lehr
+ *Created on October 14, 2014, 11:59 AM
+ */
+
+#include <cstdlib>
+#include <vector>
+#include <map>
+#include <ctime>
+#include <cmath>
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+    //Random number seed
+    srand(static_cast<unsigned int>(time(0)));
+    //Loop on the power
+    for(int j=5;j<=25;j++){
+        //Size of vector
+        int size=pow(2,j);
+        vector<int> v(size,0);
+        int frstClsn=0;
+        //Randomly pick a spot for collision
+        for(int i=0;i<size;i++){
+            int indx=rand()%size;
+            v[indx]++;
+            if(v[indx]>=2){
+                frstClsn=i;
+                break;
+            }
+        }
+        //Output the results
+        cout<<endl<<"Collision Vector Length = 2^"<<j<<"="<<size<<endl;
+        cout<<"First Collision Occurred at "<<frstClsn<<endl;
+        cout<<endl;
+    }
+    //Exit
+    return 0;
+}
+
+
+Collision Vector Length = 2^5=32
+First Collision Occurred at 11
+
+
+Collision Vector Length = 2^6=64
+First Collision Occurred at 4
+
+
+Collision Vector Length = 2^7=128
+First Collision Occurred at 13
+
+
+Collision Vector Length = 2^8=256
+First Collision Occurred at 6
+
+
+Collision Vector Length = 2^9=512
+First Collision Occurred at 19
+
+
+Collision Vector Length = 2^10=1024
+First Collision Occurred at 55
+
+
+Collision Vector Length = 2^11=2048
+First Collision Occurred at 20
+
+
+Collision Vector Length = 2^12=4096
+First Collision Occurred at 29
+
+
+Collision Vector Length = 2^13=8192
+First Collision Occurred at 62
+
+
+Collision Vector Length = 2^14=16384
+First Collision Occurred at 66
+
+
+Collision Vector Length = 2^15=32768
+First Collision Occurred at 114
+
+
+Collision Vector Length = 2^16=65536
+First Collision Occurred at 232
+
+
+Collision Vector Length = 2^17=131072
+First Collision Occurred at 184
+
+
+Collision Vector Length = 2^18=262144
+First Collision Occurred at 1116
+
+
+Collision Vector Length = 2^19=524288
+First Collision Occurred at 1587
+
+
+Collision Vector Length = 2^20=1048576
+First Collision Occurred at 1444
+
+
+Collision Vector Length = 2^21=2097152
+First Collision Occurred at 3066
+
+
+Collision Vector Length = 2^22=4194304
+First Collision Occurred at 1550
+
+
+Collision Vector Length = 2^23=8388608
+First Collision Occurred at 1716
+
+
+Collision Vector Length = 2^24=16777216
+First Collision Occurred at 3911
+
+
+Collision Vector Length = 2^25=33554432
+First Collision Occurred at 8754
+

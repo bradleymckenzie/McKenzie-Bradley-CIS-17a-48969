@@ -1,0 +1,280 @@
+/* 
+ * File:   main.cpp
+ * Author: Dr. Mark E. Lehr
+ *Created on October 14, 2014, 11:59 AM
+ */
+
+#include <cstdlib>
+#include <vector>
+#include <map>
+#include <ctime>
+#include <cmath>
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+    //Random number seed
+    srand(static_cast<unsigned int>(time(0)));
+    //Loop on the power
+    for(int j=5;j<=25;j++){
+        //Size of vector
+        int size=pow(2,j);
+        vector<int> v(size,0);
+        map<int,int> m;
+        //Randomly pick a spot for collision
+        for(int i=0;i<size;i++){
+            v[rand()%size]++;
+        }
+        //Count the Elements in the vector
+        for(int i=0;i<size;i++){
+            m[v[i]]++;
+        }
+        //Output the results
+        cout<<endl<<"Collision Vector Length = 2^"<<j<<"="<<size<<endl;
+        for(int i=0;i<m.size();i++){
+            cout<<i<<" occured "<<m[i]<<" times "<<100.0*m[i]/size<<"%"<<endl;
+        }
+        cout<<endl;
+    }
+    //Exit
+    return 0;
+}
+
+
+
+Collision Vector Length = 2^5=32
+0 occured 15 times 46.875%
+1 occured 8 times 25%
+2 occured 5 times 15.625%
+3 occured 3 times 9.375%
+4 occured 0 times 0%
+5 occured 1 times 3.125%
+
+
+Collision Vector Length = 2^6=64
+0 occured 25 times 39.0625%
+1 occured 22 times 34.375%
+2 occured 11 times 17.1875%
+3 occured 4 times 6.25%
+4 occured 2 times 3.125%
+
+
+Collision Vector Length = 2^7=128
+0 occured 50 times 39.0625%
+1 occured 41 times 32.0312%
+2 occured 26 times 20.3125%
+3 occured 10 times 7.8125%
+4 occured 0 times 0%
+5 occured 1 times 0.78125%
+
+
+Collision Vector Length = 2^8=256
+0 occured 93 times 36.3281%
+1 occured 100 times 39.0625%
+2 occured 37 times 14.4531%
+3 occured 23 times 8.98438%
+4 occured 2 times 0.78125%
+5 occured 1 times 0.390625%
+
+
+Collision Vector Length = 2^9=512
+0 occured 186 times 36.3281%
+1 occured 194 times 37.8906%
+2 occured 92 times 17.9688%
+3 occured 30 times 5.85938%
+4 occured 7 times 1.36719%
+5 occured 2 times 0.390625%
+6 occured 1 times 0.195312%
+
+
+Collision Vector Length = 2^10=1024
+0 occured 380 times 37.1094%
+1 occured 383 times 37.4023%
+2 occured 170 times 16.6016%
+3 occured 70 times 6.83594%
+4 occured 14 times 1.36719%
+5 occured 7 times 0.683594%
+
+
+Collision Vector Length = 2^11=2048
+0 occured 775 times 37.8418%
+1 occured 732 times 35.7422%
+2 occured 360 times 17.5781%
+3 occured 143 times 6.98242%
+4 occured 28 times 1.36719%
+5 occured 7 times 0.341797%
+6 occured 1 times 0.0488281%
+7 occured 2 times 0.0976562%
+
+
+Collision Vector Length = 2^12=4096
+0 occured 1504 times 36.7188%
+1 occured 1511 times 36.8896%
+2 occured 754 times 18.4082%
+3 occured 251 times 6.12793%
+4 occured 59 times 1.44043%
+5 occured 14 times 0.341797%
+6 occured 3 times 0.0732422%
+
+
+Collision Vector Length = 2^13=8192
+0 occured 3035 times 37.0483%
+1 occured 2990 times 36.499%
+2 occured 1492 times 18.2129%
+3 occured 522 times 6.37207%
+4 occured 118 times 1.44043%
+5 occured 30 times 0.366211%
+6 occured 5 times 0.0610352%
+
+
+Collision Vector Length = 2^14=16384
+0 occured 6025 times 36.7737%
+1 occured 6014 times 36.7065%
+2 occured 3036 times 18.5303%
+3 occured 1018 times 6.21338%
+4 occured 225 times 1.37329%
+5 occured 55 times 0.335693%
+6 occured 8 times 0.0488281%
+7 occured 3 times 0.0183105%
+
+
+Collision Vector Length = 2^15=32768
+0 occured 12058 times 36.7981%
+1 occured 12096 times 36.9141%
+2 occured 5965 times 18.2037%
+3 occured 2023 times 6.17371%
+4 occured 487 times 1.48621%
+5 occured 111 times 0.338745%
+6 occured 26 times 0.0793457%
+7 occured 2 times 0.00610352%
+
+
+Collision Vector Length = 2^16=65536
+0 occured 24088 times 36.7554%
+1 occured 24118 times 36.8011%
+2 occured 12152 times 18.5425%
+3 occured 3899 times 5.9494%
+4 occured 1026 times 1.56555%
+5 occured 210 times 0.320435%
+6 occured 38 times 0.0579834%
+7 occured 5 times 0.00762939%
+
+
+Collision Vector Length = 2^17=131072
+0 occured 48235 times 36.8004%
+1 occured 48157 times 36.7409%
+2 occured 24120 times 18.4021%
+3 occured 8124 times 6.19812%
+4 occured 1969 times 1.50223%
+5 occured 382 times 0.291443%
+6 occured 80 times 0.0610352%
+7 occured 3 times 0.00228882%
+8 occured 2 times 0.00152588%
+
+
+Collision Vector Length = 2^18=262144
+0 occured 96818 times 36.9331%
+1 occured 96047 times 36.639%
+2 occured 47980 times 18.3029%
+3 occured 16264 times 6.20422%
+4 occured 4024 times 1.53503%
+5 occured 845 times 0.322342%
+6 occured 143 times 0.0545502%
+7 occured 18 times 0.00686646%
+8 occured 5 times 0.00190735%
+
+
+Collision Vector Length = 2^19=524288
+0 occured 193015 times 36.8147%
+1 occured 192740 times 36.7622%
+2 occured 96310 times 18.3697%
+3 occured 32254 times 6.15196%
+4 occured 8035 times 1.53255%
+5 occured 1635 times 0.311852%
+6 occured 251 times 0.0478745%
+7 occured 42 times 0.00801086%
+8 occured 4 times 0.000762939%
+9 occured 1 times 0.000190735%
+10 occured 1 times 0.000190735%
+
+
+Collision Vector Length = 2^20=1048576
+0 occured 386340 times 36.8443%
+1 occured 384735 times 36.6912%
+2 occured 193144 times 18.4196%
+3 occured 64457 times 6.1471%
+4 occured 16026 times 1.52836%
+5 occured 3261 times 0.310993%
+6 occured 532 times 0.0507355%
+7 occured 68 times 0.00648499%
+8 occured 12 times 0.00114441%
+9 occured 1 times 9.53674e-05%
+
+
+Collision Vector Length = 2^21=2097152
+0 occured 771965 times 36.8102%
+1 occured 770936 times 36.7611%
+2 occured 385530 times 18.3835%
+3 occured 128837 times 6.14343%
+4 occured 32187 times 1.5348%
+5 occured 6478 times 0.308895%
+6 occured 1048 times 0.0499725%
+7 occured 150 times 0.00715256%
+8 occured 20 times 0.000953674%
+9 occured 1 times 4.76837e-05%
+
+
+Collision Vector Length = 2^22=4194304
+0 occured 1542124 times 36.7671%
+1 occured 1543753 times 36.8059%
+2 occured 771953 times 18.4048%
+3 occured 257412 times 6.13718%
+4 occured 63878 times 1.52297%
+5 occured 12639 times 0.301337%
+6 occured 2177 times 0.0519037%
+7 occured 311 times 0.00741482%
+8 occured 51 times 0.00121593%
+9 occured 5 times 0.000119209%
+10 occured 1 times 2.38419e-05%
+
+
+Collision Vector Length = 2^23=8388608
+0 occured 3085521 times 36.7823%
+1 occured 3086928 times 36.799%
+2 occured 1542050 times 18.3827%
+3 occured 515233 times 6.14206%
+4 occured 128279 times 1.5292%
+5 occured 25623 times 0.30545%
+6 occured 4277 times 0.0509858%
+7 occured 598 times 0.00712872%
+8 occured 91 times 0.0010848%
+9 occured 6 times 7.15256e-05%
+10 occured 2 times 2.38419e-05%
+
+
+Collision Vector Length = 2^24=16777216
+0 occured 6173373 times 36.7962%
+1 occured 6169984 times 36.776%
+2 occured 3086200 times 18.3952%
+3 occured 1029039 times 6.13355%
+4 occured 257061 times 1.5322%
+5 occured 51456 times 0.306702%
+6 occured 8711 times 0.0519216%
+7 occured 1238 times 0.00737906%
+8 occured 129 times 0.0007689%
+9 occured 23 times 0.000137091%
+10 occured 2 times 1.19209e-05%
+
+
+Collision Vector Length = 2^25=33554432
+0 occured 12346222 times 36.7946%
+1 occured 12338853 times 36.7726%
+2 occured 6175224 times 18.4036%
+3 occured 2057383 times 6.13148%
+4 occured 513953 times 1.5317%
+5 occured 102835 times 0.306472%
+6 occured 17107 times 0.0509828%
+7 occured 2528 times 0.00753403%
+8 occured 290 times 0.000864267%
+9 occured 33 times 9.83477e-05%
+10 occured 4 times 1.19209e-05%

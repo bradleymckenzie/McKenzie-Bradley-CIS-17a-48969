@@ -1,0 +1,68 @@
+/* 
+ * File:   main.cpp
+ * Author: Bradley McKenzie
+ * Created on October 16, 2017
+ * Purpose: Date: Design a class called Date. The class should store a date in
+ * three integers: month, day, and year. There should be member functions to
+ * print the date in the following forms:
+ *                                        12/25/2014
+ *                                        December 25, 2014
+ *                                        25 December 2014
+ * Demonstrate the class by writing a complete program implementing it.
+ */
+
+//System Libraries
+
+//User Libraries
+
+//Global Constants
+    //Such as PI, Vc, -> Math/Science Values
+    //as well as conversions from system of units to another
+
+//Function Prototypes
+
+//Executable code begins here!!!
+
+//Declare Variables
+//class set
+//set variables to 0
+
+//Input Values
+//title
+
+//input day
+//must be a number 1-31
+
+//input month
+//must be 1-12
+
+//input year
+//must be 1000-9999
+
+//Process by mapping inputs to outputs
+//setDay
+//setYear
+//setMonth
+//Output Values
+//title
+
+//display output
+
+//Exit stage right!
+
+//setDay
+
+//setMonth
+
+//setYear
+
+//getDay
+
+//getMonth
+
+//getYear
+
+//display output
+
+//loop output
+ 
