@@ -1,0 +1,18 @@
+  The spinner landed on: Blue
+  Your pay out is: $-33
+  The spinner landed on: Red
+  Your pay out is: $6
+  The spinner landed on: Blue
+  Your pay out is: $-3
+  The spinner landed on: Red
+  Your pay out is: $6
+  The spinner landed on: Red
+  Your pay out is: $6
+  The spinner landed on: Blue
+  Your pay out is: $-3
+ -----------------------------
+  Percentage of Wins = 50%
+  Percentage of Losses = 50%
+  Possible Winnings: $96.00
+  Total Winning: $-21.00
+ -----------------------------

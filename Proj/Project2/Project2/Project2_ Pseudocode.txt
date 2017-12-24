@@ -1,0 +1,292 @@
+/* 
+ File:   main.cpp
+ Author: Bradley McKenzie
+ Created on December 4, 2017
+ Purpose: Project 2
+ */
+
+//System Libraries
+     //Standard library
+     //Random Numbers/Exit
+     //Time to set the seed
+     //File stream library
+     //Format library
+     //String library
+     //Vector library
+     //Character string
+
+//User Libraries
+
+//Global Constants
+//Calculate Wins and Losses Percentages
+//Limit Number of Games 100's
+//Limit to 10's
+//Constants for Structure Inputs
+
+//Password
+//Username
+//Bet Color
+//Result Color
+//Bet Amount
+//Pay Out Result
+//Total Winnings
+//Possible Wins
+//Number of Wins
+//Number of Losses
+//Valid Color
+//Land on Red
+//Land on Blue
+//Character string
+//Character string
+//Standard Number of Games
+
+//Function Prototypes
+    //Calculate Wins and Loss Percentage
+    //Output a respond based on Winnings
+    //Respond if player losses money
+    //Display High Score Yes or No
+    //Search for a username
+    //Test Color
+    //Operator Overloading
+//Executable code begins here!!!
+	//int main
+//Set the random number seed for wheel spin
+//Structure setup
+//Class setup
+//Instantiate and Open files
+//Input Number of Games
+//Output Result of Games
+//Output Score if Winnings > 0
+//Input Values//Structure in Use
+ //Declare Variables-Pointer Array
+//Select Standard Number of Games
+ //Title
+//Get Username
+//Get Correct Password
+//If password is wrong ask for it again
+
+//Loop to end
+//Limit the number of games
+
+//Loop the Game
+   //Bet amount input
+//Not allow bet to negative or 0
+//Bet amount input
+     //Input validation loop
+//Bet color input
+
+     //Check if bet color is valid
+    //if !valid, then output invalid message
+   //If not valid ask for bet color again
+        //Bet color input
+    //end input validation loop
+    //Process by mapping inputs to outputs
+    //Last line will be number of games from file
+    //Call random number generator for the color landed on
+//Value from 1 to 26 //Spin Wheel
+//Land on Red
+//Bet Won
+//Double Bet
+//Add plus one win
+
+//Bet Loss
+//Minus Bet
+//Add plus one loss
+
+//Invalid Input
+
+//Output Game Result for Land on Red
+
+//Land on Blue
+//Bet Won
+//Double bet
+//Add plus one win
+
+//Bet Loss
+//Minus Bet
+  //Add plus one loss
+  
+   //Invalid Input
+
+          //Output Game Result For Land on Blue
+
+  //Get Sum of Pay Out
+  //Get Sum of Bet
+ //Display Current Winnings 
+//Output Username and Total Winnings if Winnings is > 0
+
+//Close High Score File
+
+//Output Percentage of Wins and Losses
+    //Percent Wins
+    //Percent Losses
+    //Possible Winnings
+    //Actual Winnings
+
+//Output Result Based on Winnings
+//Respond if player losses money
+//Run Double or Nothing Free Spin
+//Run Double or Nothing x 2
+     //Percent Wins
+     //Percent Losses
+
+     //Possible Winnings
+     //Actual Winnings
+
+//Display High Score From File
+ //Get Y or N input then show high scores or exit
+
+//Find a username in high score file
+
+//Close Files and Exit stage right!
+
+//Calculate Wins and Loss Percentage
+
+//Output a respond based on Winnings
+  //Loss money respond
+  //Won money respond
+  //Won a lot of money respond
+  //Respond if player losses money
+
+//Display High Score Yes or No
+   //Declare option to display high score
+   //Get Yes or No
+   //Input Y or y to open high score
+                //Input each line of the file
+
+//Search for a username
+	//Input High Score File
+
+//Close File and Exit Stage right!
+
+//Calculate Wins and Loss Percentage
+//Output a respond based on Winnings
+ //Loss money respond
+     //Won money respond
+       //Won a lot of money respond
+
+//Respond if player losses money
+
+//Display High Score Yes or No
+  //Declare option to display high score
+  //Input Y or y to open high score
+  	//Input each line of the file
+           //Game Over Overload Operator
+              //Polymorphism
+                     //Game Over Overload Operator
+              //Polymorphism
+
+//Search for a username
+ //Input High Score File
+   //Close File
+   
+//Test Color
+   
+//Game Over Overload Operator
+
+/* 
+ File:   main.cpp
+ Author: Bradley McKenzie
+ Created on December 4, 2017
+ Purpose: Project 2: Double or Nothing x 2 Class
+ */
+
+//Dornx2 Input Class Inherit Dornx3
+ //Bet Amount
+     //Pay Out Result
+     //Total Winnings
+     //Possible Wins
+     //Number of Wins
+     //Number of Losses
+     //Polymorphism Function
+     //Double or Nothing x 2 Function
+     //Double or Nothing Free Spin
+     //Test Color
+
+//Polymorphism
+ 
+//Polymorphism
+
+//Spin Wheel Land Prize
+  //Wheel Land on 1
+  //Wheel Land on 2
+//Wheel Land on 3
+//Wheel Land on 4
+//Wheel Land on 5
+//Wheel Land on 6
+//Wheel Land on 7
+//Wheel Land on 8
+//Wheel Land on 9
+//Wheel Land on 10
+
+/* 
+ File:   main.cpp
+ Author: Bradley McKenzie
+ Created on December 4, 2017
+ Purpose: Project 2: Double or Nothing x 2: String Class
+ */
+
+//Constants for Class Inputs
+
+//Dornx3 Inputs Class
+    //Response to Game Option
+    //Bet Color
+    //Result Color
+       //Valid Color
+       //Land on Red
+       //Land on Blue
+
+/* 
+ File:   main.cpp
+ Author: Bradley McKenzie
+ Created on December 4, 2017
+ Purpose: Project 2: Double or Nothing x 2 Function
+ */
+
+//Test Color
+   
+//Free Spin Function
+    //Set the random number seed for wheel spin
+     //if pay out is negative run free spin wheel
+     //Get Key Input
+        //Value from 1 to 10 //Spin Wheel
+        //Run Response Function for Wheel Spin
+
+//Double or Nothing x 2 Function
+    //Set the random number seed for wheel spin
+   //if pay out is positive ask to pay double or nothing x 2
+ 	//get response
+    	//set n(sum) to bet
+          //Input validation loop
+    //Bet color input
+    //Check if bet color is valid
+             //if !valid, then output invalid message
+   //If not valid ask for bet color again
+           //Bet color input
+    //end input validation loop
+    //Process by mapping inputs to outputs
+    //Last line will be number of games from file
+    //Call random number generator for the color landed on
+     //Value from 1 to 26 //Spin Wheel
+     //Land on Red
+        //Bet Won
+           //Double Bet
+             //Add plus one win
+      //Bet Loss
+             //Minus Bet
+             //Add plus one loss
+      //Invalid Input
+                     //Output Game Result for Land on Red
+         //Land on Blue
+    //Bet Won
+           //Double bet
+             //Add plus one win
+      //Bet Loss
+          //Minus Bet
+          //Add plus one loss
+      //Invalid Input
+         
+          //Output Game Result For Land on Blue
+            //Get Sum of Pay Out
+  	//Get Sum of Bet
+  //Display Total Winnings
